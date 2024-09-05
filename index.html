@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angeline">
+    <meta name="description" content="A personal web page about Angeline.">
+    <title>About Angeline</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Styles for theatre mode */
+        #theatre-mode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            padding: 20px;
+        }
+        #theatre-mode video {
+            width: 80%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(172, 94, 94, 0.5);
+        }
+
+        /* Styles for album cover with audio */
+        #album-cover {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #album-cover img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Web Page</h1>
+        <a href="https://www.yoursocialmedia.com" target="_blank">
+            <img src="profile.jpg" alt="Angeline" id="profile-pic">
+        </a>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Angeline Byju, studying btech in computer science, I am passionate about technology and eager to apply skills in software development 
+            I'm excited about the opportunities to contribute to impactful projects and further expertise in this dynamic field .
+        </p>
+    </section>
+
+    <section id="bucket-list">
+        <h2>My Bucket List</h2>
+        <table>
+            <tr>
+                <th>Serial Number</th>
+                <th>Items</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>scuba diving</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Go trekking </td>
+                <td> Completed</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>exploring variety of foods</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Financial independence</td>
+                <td>Not Completed</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Visit thailand </td>
+                <td> Completed</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Favourite Media</h2>
+
+        <h3>Favourite clip:</h3>
+        <div id="theatre-mode">
+            <video controls>
+                <source src="Rainy Day [short 30 sec animation].mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <h3>Favourite Song:</h3>
+        <div id="album-cover">
+            <img src="song cover.jfif" alt="ayyo  Cover">
+            <audio controls>
+                <source src="Matadoria - I.O.Y.A (Ayyo Vayye) - അയയ വയയ ( Official Video).mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section id="interaction">
+        <h2>Interactive Section</h2>
+        <button onclick="welcomeMessage()">Click Me!</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
